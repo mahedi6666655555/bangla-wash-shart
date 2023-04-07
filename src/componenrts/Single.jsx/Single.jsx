@@ -13,7 +13,7 @@ const Single = ({ Single, btn }) => {
                     <h1 className='text-2xl '>price: {price}</h1>
                 </div>
                 <div>
-                    <button onClick={() => btn()} className='bg-orange-800 py-4 w-full text-lg font-bold absolute bottom-0'>buy now</button>
+                    <button onClick={() => btn(Single)} className='bg-orange-800 py-4 w-full text-lg font-bold absolute bottom-0'>buy now</button>
 
                 </div>
             </div>

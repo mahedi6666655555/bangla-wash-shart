@@ -17,14 +17,21 @@ const Home = () => {
 
     let [set, setf] = useState([])
 
-    let mahedi = (Single) => {
+    let mahedi = Single => {
 
         const newCart = [...set, Single];
         setf(newCart);
 
 
+
     }
-    
+
+    let mahedi12 = (id) => {
+        const remainng=set.filter(ts=>ts._id !==id)
+        setf(remainng)
+        
+    }
+
 
 
 
@@ -46,11 +53,12 @@ const Home = () => {
                         </Single>)
                     }
                 </div>
-                <div className='bg-gray-400 h-20 ml-2'>
+                <div className='bg-gray-400 h-[700px] ml-2'>
                     <Cart
 
-                        mahedi1={mahedi}
+
                         set1={set}
+                        mahedi12={mahedi12}
                     >
 
                     </Cart>
